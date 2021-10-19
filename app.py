@@ -59,7 +59,7 @@ extensions = ["png", "jpg", "jpeg", "gif", "raw", "psd", "tiff", "ai", "jfif"]
 aa = os.listdir()
 a = []
 for i in aa:
-    if i.split(".")[-1].lower() in extensions:
+    if i.rsplit(".")[-1].lower() in extensions:
         a.append(i)
 
 # List for Files which were added
